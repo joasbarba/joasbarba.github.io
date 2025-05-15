@@ -1,0 +1,42 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos de build
+dist/
+build/
+node_modules/
+
+# Arquivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos temporários
+*.tmp
+*.temp
+.cache/
+
+# Arquivos de mídia grandes
+*.mp3
+*.mp4
+*.mov
+*.avi
+*.wmv
+
+# Arquivos de backup
+*.bak
+*.backup
+*~ 
