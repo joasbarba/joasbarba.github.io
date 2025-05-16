@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Movimentos Sociais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #1b5e20;
+            --accent-color: #43a047;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .movements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .movement-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .movement-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .movement-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .movement-card p {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        .nav-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .movements-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portal de Movimentos Sociais</h1>
+            <p>Conectando pessoas e causas</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Movimentos em Destaque</h2>
+            <p>Conheça e participe dos movimentos sociais que estão transformando nossa sociedade</p>
+        </section>
+
+        <section class="movements-grid">
+            <div class="movement-card">
+                <h3>Movimento Marola!</h3>
+                <p>Um movimento apartidário que luta pela liberdade individual, justiça social e políticas públicas baseadas em evidências científicas.</p>
+                <a href="media/Marola!.html" class="nav-button">Conhecer Movimento</a>
+            </div>
+
+            <div class="movement-card">
+                <h3>Marcha da Maconha da UNE</h3>
+                <p>O maior movimento estudantil em defesa da legalização da maconha e por uma política de drogas mais justa e humana.</p>
+                <a href="media/index.html" class="nav-button">Conhecer Marcha</a>
+            </div>
+
+            <div class="movement-card">
+                <h3>Em Breve</h3>
+                <p>Novos movimentos e causas serão adicionados em breve. Fique ligado!</p>
+                <a href="#" class="nav-button">Saiba Mais</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Portal de Movimentos Sociais</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+            </div>
+            <p>&copy; 2024 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html> 
