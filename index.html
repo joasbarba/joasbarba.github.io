@@ -1,159 +1,25 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcha da Maconha da UNE</title>
+    <title>Projeto Verde - Cultura e Ativismo Canábico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .info-section {
-            background-color: white;
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .info-section h2 {
-            color: #2e7d32;
-            margin-bottom: 1rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #2e7d32;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #1b5e20;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Marcha da Maconha da UNE</h1>
-            <p>Por uma política de drogas mais justa e humana</p>
-        </div>
-    </header>
-
-    <main class="container">
-        <section class="hero">
-            <h2>Junte-se à luta pela legalização</h2>
-            <p>Participe da maior manifestação em defesa da legalização da maconha no Brasil</p>
-        </section>
-
-        <section class="info-section">
-            <h2>Sobre a Marcha</h2>
-            <p>A Marcha da Maconha é um movimento social que luta pela legalização da maconha e por uma política de drogas mais justa e humana. Organizada pela UNE (União Nacional dos Estudantes), a marcha reúne milhares de pessoas em todo o Brasil para discutir e protestar contra a atual política de drogas.</p>
-        </section>
-
-        <section class="info-section">
-            <h2>Nossos Objetivos</h2>
-            <ul>
-                <li>Legalização da maconha para uso adulto</li>
-                <li>Fim da guerra às drogas</li>
-                <li>Redução de danos</li>
-                <li>Educação sobre o uso responsável</li>
-                <li>Fim da criminalização dos usuários</li>
-            </ul>
-        </section>
-
-        <section class="info-section">
-            <h2>Participe</h2>
-            <p>Venha fazer parte desta importante manifestação. Traga sua família, amigos e faça parte da mudança que queremos ver no Brasil.</p>
-            <a href="#" class="cta-button">Inscreva-se</a>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Marcha da Maconha da UNE - Todos os direitos reservados</p>
-        </div>
-    </footer>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Movimentos Sociais</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
         :root {
             --primary-color: #2e7d32;
             --secondary-color: #1b5e20;
             --accent-color: #43a047;
             --text-color: #333;
             --light-bg: #f5f5f5;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -162,156 +28,337 @@
             line-height: 1.6;
         }
 
-        header {
+        .navbar {
+            background-color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
+            color: var(--white);
+            padding: 8rem 0 4rem;
             text-align: center;
-            padding: 3rem 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 4rem 2rem;
         }
 
-        .hero {
+        .section-title {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
 
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
+        .section-title h2 {
             color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
 
-        .movements-grid {
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
 
-        .movement-card {
-            background: white;
-            border-radius: 10px;
-            padding: 2rem;
+        .card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
-            text-align: center;
         }
 
-        .movement-card:hover {
+        .card:hover {
             transform: translateY(-5px);
         }
 
-        .movement-card h3 {
-            color: var(--accent-color);
+        .card-content {
+            padding: 2rem;
+        }
+
+        .card h3 {
+            color: var(--primary-color);
             margin-bottom: 1rem;
         }
 
-        .movement-card p {
-            margin-bottom: 1.5rem;
+        .card p {
             color: #666;
+            margin-bottom: 1.5rem;
         }
 
-        .nav-button {
+        .btn {
             display: inline-block;
             background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 30px;
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
             transition: all 0.3s ease;
         }
 
-        .nav-button:hover {
+        .btn:hover {
             background-color: var(--secondary-color);
             transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .features {
+            background-color: var(--white);
+            padding: 4rem 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
         }
 
         footer {
             background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
         }
 
         .social-links {
+            display: flex;
+            gap: 1rem;
             margin-top: 1rem;
         }
 
         .social-links a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
+            .nav-links {
+                display: none;
             }
 
             .hero h1 {
                 font-size: 2rem;
             }
 
-            .movements-grid {
-                grid-template-columns: 1fr;
+            .container {
+                padding: 2rem 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Portal de Movimentos Sociais</h1>
-            <p>Conectando pessoas e causas</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Projeto Verde</a>
+            <div class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#sambas">Sambas</a>
+                <a href="#midia">Mídia</a>
+                <a href="#contato">Contato</a>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section class="hero">
-            <h2>Movimentos em Destaque</h2>
-            <p>Conheça e participe dos movimentos sociais que estão transformando nossa sociedade</p>
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Projeto Verde</h1>
+            <p>Unindo ciência, cultura e mobilização social em prol da liberdade e justiça</p>
+            <a href="#sobre" class="btn">Conheça Mais</a>
+        </div>
+    </section>
 
-        <section class="movements-grid">
-            <div class="movement-card">
-                <h3>Movimento Marola!</h3>
-                <p>Um movimento apartidário que luta pela liberdade individual, justiça social e políticas públicas baseadas em evidências científicas.</p>
-                <a href="media/Marola!.html" class="nav-button">Conhecer Movimento</a>
+    <section id="sobre" class="container">
+        <div class="section-title">
+            <h2>Sobre o Projeto</h2>
+            <p>Um movimento que integra ativismo, cultura e pesquisa científica</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Movimento Marola!</h3>
+                    <p>Um movimento apartidário que luta pela liberdade individual, justiça social e políticas públicas baseadas em evidências científicas.</p>
+                    <a href="media/Marola!.html" class="btn">Saiba Mais</a>
+                </div>
             </div>
-
-            <div class="movement-card">
-                <h3>Marcha da Maconha da UNE</h3>
-                <p>O maior movimento estudantil em defesa da legalização da maconha e por uma política de drogas mais justa e humana.</p>
-                <a href="media/index.html" class="nav-button">Conhecer Marcha</a>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Marcha da Maconha da UNE</h3>
+                    <p>O maior movimento estudantil em defesa da legalização da maconha e por uma política de drogas mais justa e humana.</p>
+                    <a href="media/Marcha.html" class="btn">Conhecer Marcha</a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="movement-card">
-                <h3>Em Breve</h3>
-                <p>Novos movimentos e causas serão adicionados em breve. Fique ligado!</p>
-                <a href="#" class="nav-button">Saiba Mais</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <section id="eventos" class="features">
         <div class="container">
-            <p>Portal de Movimentos Sociais</p>
-            <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">Facebook</a>
+            <div class="section-title">
+                <h2>Eventos</h2>
+                <p>Participe dos nossos eventos e faça parte da mudança</p>
             </div>
-            <p>&copy; 2024 - Todos os direitos reservados</p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-calendar-alt feature-icon"></i>
+                    <h3>Mega Assembleia</h3>
+                    <p>19 de abril - Um encontro histórico para discutir o futuro do movimento</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-music feature-icon"></i>
+                    <h3>Carnaval em Nome de Jah</h3>
+                    <p>Celebração cultural e resistência através da música</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h3>Marcha da Maconha</h3>
+                    <p>O maior evento de rua pela legalização</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sambas" class="container">
+        <div class="section-title">
+            <h2>Sambas e Cultura</h2>
+            <p>Expressão artística e resistência cultural</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Exaltação da Maconha</h3>
+                    <p>Um samba que celebra a cultura e a resistência</p>
+                    <a href="sambas/" class="btn">Ver Letras</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Acadêmicos do Verde</h3>
+                    <p>O samba como instrumento de luta e conscientização</p>
+                    <a href="sambas/" class="btn">Conhecer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Projeto Verde</h3>
+                <p>Unindo ciência, cultura e mobilização social em prol da liberdade e justiça.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#sobre" style="color: var(--white);">Sobre</a></li>
+                    <li><a href="#eventos" style="color: var(--white);">Eventos</a></li>
+                    <li><a href="#sambas" style="color: var(--white);">Sambas</a></li>
+                    <li><a href="#midia" style="color: var(--white);">Mídia</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Entre em contato conosco para mais informações sobre o projeto e como participar.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Projeto Verde - Todos os direitos reservados</p>
         </div>
     </footer>
 </body>
->>>>>>> master
 </html> 
